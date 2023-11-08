@@ -1,12 +1,12 @@
 
-# Dependencies
+### Dependencies
 1) [IXWebSocket](https://github.com/machinezone/IXWebSocket) Please follow the instructions on the source repo.
 2) [json](https://github.com/nlohmann/json) Included in `src/include/ar_perception_client_pkg/nolhmann_json.hpp`.
 
-
+### ROS command
 `rosrun ar_perception_client_pkg ar_perception_client_pkg __name:=different_name _stream_name:="stream-name"`
 
-Possible stream names
+### Possible stream names
 ```
 upper-velodyne-vlp16/depth/points
 forward-tis-dfm27up/color/image-raw
@@ -29,7 +29,7 @@ backward-pelvis-realsense-d430/depth/image-rect
 backward-pelvis-realsense-d430/depth/points
 ```
 
-# TODO
+### TODO
 <ol>
 <li> Currently only implementing `flow-rate=none`. Are `framerate` and `request` needed? </li>
 <li> Documentation.</li>
