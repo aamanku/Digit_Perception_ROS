@@ -1,0 +1,23 @@
+<launch>
+
+    <node pkg="ar_perception_client_pkg" type="ar_perception_client_pkg_node" name="lidar_ptc_node" ns="digit" output="screen">
+            <param name="stream_name" value="upper-velodyne-vlp16/depth/points"/>
+    </node>
+
+    <node pkg="ar_perception_client_pkg" type="ar_perception_client_pkg_node" name="forward_rs_ptc_node" ns="digit" output="screen">
+            <param name="stream_name" value="forward-chest-realsense-d435/depth/points"/>
+    </node>
+
+    <node pkg="ar_perception_client_pkg" type="ar_perception_client_pkg_node" name="forward_pelvis_rs_ptc_node" ns="digit" output="screen">
+            <param name="stream_name" value="forward-pelvis-realsense-d430/depth/points"/>
+    </node>
+
+    <node pkg="ar_perception_client_pkg" type="ar_perception_client_pkg_node" name="downward_pelvis_rs_ptc_node" ns="digit" output="screen">
+            <param name="stream_name" value="downward-pelvis-realsense-d430/depth/points"/>
+    </node>
+    
+    <node pkg="ar_perception_client_pkg" type="ar_perception_client_pkg_node" name="backward_pelvis_rs_ptc_node" ns="digit" output="screen">
+            <param name="stream_name" value="backward-pelvis-realsense-d430/depth/points"/>
+    </node>
+
+</launch>
